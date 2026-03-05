@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://d4id0xmvb5b6f" path="res://Misc/HallOfGames/Assets/GameThumbnails/mall.png" id="7_bxy5t"]
 [ext_resource type="PackedScene" uid="uid://dqxes2rgafctr" path="res://Misc/HallOfGames/prooble/newproob.tscn" id="8_5dnqa"]
 [ext_resource type="Texture2D" uid="uid://dpe13fghb3ybc" path="res://Misc/HallOfGames/Assets/GameThumbnails/mixpaint.png" id="8_bpkln"]
-[ext_resource type="PackedScene" uid="uid://23ldqrlrursk" path="res://Frameworks(YourStuff)/Kevin/FinishHim/scenes/game.tscn" id="8_is3mi"]
+[ext_resource type="PackedScene" uid="uid://ckba23jn4blex" path="res://Frameworks(YourStuff)/Kevin/FinishHim/scenes/game_container.tscn" id="8_t63on"]
 [ext_resource type="Texture2D" uid="uid://c1mpksocukcfw" path="res://Misc/HallOfGames/Assets/GameThumbnails/planeteater.png" id="9_uslha"]
 [ext_resource type="PackedScene" uid="uid://dro5d573niwan" path="res://Frameworks(YourStuff)/Mall/MainMallGame.tscn" id="10_t63on"]
 [ext_resource type="Texture2D" uid="uid://cey1t22r3cbiu" path="res://Misc/HallOfGames/Assets/GameThumbnails/pong.png" id="10_uxgyb"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cgavkgl8jafjp" path="res://Misc/HallOfGames/Assets/GameThumbnails/scary.png" id="15_bpkln"]
 [ext_resource type="PackedScene" uid="uid://dlocbot83i03" path="res://Frameworks(YourStuff)/Pong;)/scenes/main.tscn" id="16_4h5bt"]
 [ext_resource type="Texture2D" uid="uid://cettwqm86qww7" path="res://Misc/HallOfGames/Assets/GameThumbnails/seal.png" id="16_uslha"]
+[ext_resource type="PackedScene" uid="uid://dhf146yfyie4v" path="res://Frameworks(YourStuff)/Kevin/Repair/scenes/game_container.tscn" id="18_f5dxm"]
 [ext_resource type="PackedScene" uid="uid://c4vbajirj1ay5" path="res://Frameworks(YourStuff)/rock-skpping/ww_game.tscn" id="19_eqdgc"]
 [ext_resource type="Script" uid="uid://dxt8t8cmh2gml" path="res://Misc/HallOfGames/door.gd" id="19_uslha"]
 [ext_resource type="PackedScene" uid="uid://6p8uik27q6fv" path="res://Frameworks(YourStuff)/Kevin/Swat/scenes/game.tscn" id="21_ppvl0"]
@@ -127,7 +128,7 @@ texture = ExtResource("6_yfor6")
 
 [node name="Door2" parent="Games/Vandalism" unique_id=1470802112 instance=ExtResource("3_kfup3")]
 position = Vector2(194, 323)
-game_to_switch = ExtResource("8_is3mi")
+game_to_switch = ExtResource("8_t63on")
 
 [node name="TrickTape" type="Node2D" parent="Games" unique_id=1895500436]
 position = Vector2(2319, 193)
@@ -212,7 +213,7 @@ texture = ExtResource("11_3yisg")
 
 [node name="Door2" parent="Games/Tyson2" unique_id=1683781353 instance=ExtResource("3_kfup3")]
 position = Vector2(194, 323)
-game_to_switch = ExtResource("8_is3mi")
+game_to_switch = ExtResource("18_f5dxm")
 
 [node name="Repair" type="Node2D" parent="Games" unique_id=879163841]
 position = Vector2(5053, 193)
