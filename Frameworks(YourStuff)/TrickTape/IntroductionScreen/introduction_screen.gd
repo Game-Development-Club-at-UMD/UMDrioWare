@@ -27,4 +27,4 @@ func show_introduction() -> void:
 	await icon_drag_out.tween.finished
 	background.visible = false
 	drag.visible = false
-	
+	get_tree().paused = false
