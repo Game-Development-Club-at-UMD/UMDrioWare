@@ -77,5 +77,5 @@ func check_match():
 	return true
 	
 func _on__finished() -> void:
-	end_game.emit((needed_players == current_players))
+	end_game.emit((check_match()))
 	print('done')
