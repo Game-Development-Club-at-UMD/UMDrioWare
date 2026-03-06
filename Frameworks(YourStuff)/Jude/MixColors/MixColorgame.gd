@@ -70,7 +70,6 @@ func get_closest_rigid_color(c: Color) -> Color: #helper
 
 
 func _on_mixer_done_mixing() -> void:
-	print(get_closest_rigid_color(current_paint), " ", color_chosen)
 	if get_closest_rigid_color(current_paint) == color_chosen:
 		won = true
 	else:

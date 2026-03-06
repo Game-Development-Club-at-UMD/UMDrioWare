@@ -39,7 +39,7 @@ func _process(delta):
 	
 	if not ray_cast_2d.is_colliding() and Input.is_action_just_pressed("Dash"):
 		if dash_count == 0:
-			apply_central_impulse(Vector2(50,0))
+			apply_central_impulse(Vector2(50 * game.get_intensity(),0))
 			dash_count += 1
 		 
 	

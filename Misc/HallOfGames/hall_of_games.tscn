@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://cxymrx6g58j1" path="res://Frameworks(YourStuff)/Connor/tyson.tscn" id="23_reduu"]
 [ext_resource type="PackedScene" uid="uid://ctlvcejfmwli1" path="res://Frameworks(YourStuff)/Scary_Music_Jam/Main/Main.tscn" id="25_f5cm2"]
 [ext_resource type="PackedScene" uid="uid://bvuvngqyv3pri" path="res://Frameworks(YourStuff)/Seal_race/Main.tscn" id="27_ij6m0"]
+[ext_resource type="Texture2D" uid="uid://cypktxh1mqqcw" path="res://Misc/HallOfGames/Assets/GameThumbnails/miguel.png" id="29_f5dxm"]
 [ext_resource type="AudioStream" uid="uid://bcmheed0ddmp8" path="res://Misc/HallOfGames/Assets/lockingin@ACM.wav" id="32_is3mi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hnllp"]
@@ -311,7 +312,7 @@ color = Color(0, 0, 0, 1)
 polygon = PackedVector2Array(-653.80444, -296.42834, -551.3013, -362.91696, -144.0586, -351.8355, 290.88745, -357.37622, 581.77515, -360.1466, 623.3308, -271.49512, 615.0198, -135.74756, 601.1677, 265.9544, 598.3972, 360.1466, 440.48706, 379.53906, 102.503174, 362.91687, -113.58472, 376.76868, -343.5244, 376.76868, -573.4641, 379.53906, -634.4121, 274.2655, -642.72314, 96.962524, -648.2639, -180.0733)
 
 [node name="Baseplate" type="Sprite2D" parent="Games/Mall/Polygon2D" unique_id=1773962317]
-texture = ExtResource("2_dm7o2")
+texture = ExtResource("29_f5dxm")
 
 [node name="Door2" parent="Games/Mall" unique_id=823152930 instance=ExtResource("3_kfup3")]
 position = Vector2(194, 323)

@@ -42,7 +42,7 @@ var all_games : Array[PackedScene] = [
 	ROCK_SKIP,
 	TYSON,
 	FINISH_HIM,
-	MIX_PAINT_JUDE_,
+	TROLLEY_MAIN_SCENE,
 	SCARY_GAME,
 	SEAL_GAME
 	]
@@ -81,11 +81,12 @@ func _ready() -> void:
 #endregion
 
 func start_games(game : PackedScene = null):
+	
 	if game:
 		mix = [game]
 	else:
 		mix = all_games.duplicate()
-	
+	game_intensity = 1
 	lives = 3
 	score = 0
 	games_to_play_this_stage = mix.duplicate()
