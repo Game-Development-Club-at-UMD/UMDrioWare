@@ -112,7 +112,7 @@ func _start_game():
 	inst_monster(0, bad_monster_inst) # creates one bad monster
 	badMonsterLocation = Vector2(tile_positions[0][0], tile_positions[0][1])
 	canvas_modulate.set_color(Color(0.1333, 0.1333, 0.1333, 1.0)) # dark color: (0.1333, 0.1333, 0.1333, 1.0)
-	lose_timer.wait_time = clampi((12/ get_intensity()),6,12)
+	lose_timer.wait_time = clampi((20/ get_intensity()),12,20)
 	print(get_intensity())
 	print(lose_timer.wait_time)
 	lose_timer.start()
