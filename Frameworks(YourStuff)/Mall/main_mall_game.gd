@@ -22,6 +22,10 @@ var current_players = []
 @onready var lightoff: AudioStreamPlayer = $StageBackground/lightoff
 @onready var stage_light: PointLight2D = $Bar/Light/PointLight2D
 
+func increase_volume():
+	for i in 5:
+		adaptive_music.increase_volume(i, -10, .1,1)
+
 func _start_game():
 	start_animation.play("start")
 	await start_animation.animation_finished
@@ -65,6 +69,7 @@ func _on_game_timer_timeout() -> void:
 	if check_match():
 		win_animation.show()
 		win_animation.play("default")
+		adaptive_music.increase_v
 	else:
 		lose_animation.play("lose_anim")
 		lose_animation.get_child(0).show()
