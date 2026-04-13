@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ecwwvjxjw1iu"]
+
+[ext_resource type="Texture2D" uid="uid://ch6pcfyhb3ybe" path="res://Misc/HallOfGames/Assets/flatjude.png" id="1_4hx3h"]
+[ext_resource type="PackedScene" uid="uid://hfmyppw6hg22" path="res://Misc/HallOfGames/gamer_tag.tscn" id="2_7syko"]
+
+[node name="Flatjude" type="Sprite2D" unique_id=1426676108]
+scale = Vector2(1.2243928, 1.2243928)
+texture = ExtResource("1_4hx3h")
+offset = Vector2(4.083618, -63.705048)
+
+[node name="GamerTag" parent="." unique_id=1690713788 instance=ExtResource("2_7syko")]
+offset_left = -48.18715
+offset_top = -149.46184
+offset_right = 72.81285
+offset_bottom = -123.46184

@@ -33,7 +33,7 @@ const MALL = preload("res://Frameworks(YourStuff)/Mall/MainMallGame.tscn")
 var all_games : Array[PackedScene] = [
 	BASEPLATE,
 	TRICK_TAPE, 
-	MALL,
+	#MALL,
 	SWAT,
 	REPAIR,
 	PLANET_GAME,

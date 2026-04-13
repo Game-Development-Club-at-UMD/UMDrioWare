@@ -2,14 +2,15 @@
 
 [ext_resource type="Script" uid="uid://t886as704gvv" path="res://Misc/HallOfGames/hall_of_games.gd" id="1_hnllp"]
 [ext_resource type="Texture2D" uid="uid://c8okkqic57sjw" path="res://Misc/HallOfGames/Assets/GameThumbnails/baseplate.png" id="2_dm7o2"]
+[ext_resource type="PackedScene" uid="uid://ecwwvjxjw1iu" path="res://Misc/HallOfGames/Person.tscn" id="2_if1hg"]
 [ext_resource type="PackedScene" uid="uid://c14bvnum1utwo" path="res://Misc/HallOfGames/door.tscn" id="3_kfup3"]
 [ext_resource type="Texture2D" uid="uid://b2y486ghkxb8e" path="res://Misc/HallOfGames/Assets/bigdoor.png" id="4_a3agb"]
 [ext_resource type="PackedScene" uid="uid://67mvu2cf11so" path="res://Frameworks(YourStuff)/BasePlate/Baseplate.tscn" id="5_0k5ob"]
 [ext_resource type="PackedScene" uid="uid://hfmyppw6hg22" path="res://Misc/HallOfGames/gamer_tag.tscn" id="5_dxurm"]
-[ext_resource type="Texture2D" uid="uid://ch6pcfyhb3ybe" path="res://Misc/HallOfGames/Assets/flatjude.png" id="5_ruw4v"]
 [ext_resource type="Script" uid="uid://bei86e37xtwac" path="res://Misc/HallOfGames/camera_2d.gd" id="6_hd6uv"]
 [ext_resource type="Texture2D" uid="uid://cx51rxppgs7pw" path="res://Misc/HallOfGames/Assets/GameThumbnails/finishhim.png" id="6_yfor6"]
 [ext_resource type="Texture2D" uid="uid://d4id0xmvb5b6f" path="res://Misc/HallOfGames/Assets/GameThumbnails/mall.png" id="7_bxy5t"]
+[ext_resource type="Texture2D" uid="uid://dnvtduxbq3xpa" path="res://Misc/HallOfGames/Assets/people/evilkev.png" id="8_4h5bt"]
 [ext_resource type="PackedScene" uid="uid://dqxes2rgafctr" path="res://Misc/HallOfGames/prooble/newproob.tscn" id="8_5dnqa"]
 [ext_resource type="Texture2D" uid="uid://dpe13fghb3ybc" path="res://Misc/HallOfGames/Assets/GameThumbnails/mixpaint.png" id="8_bpkln"]
 [ext_resource type="PackedScene" uid="uid://ckba23jn4blex" path="res://Frameworks(YourStuff)/Kevin/FinishHim/scenes/game_container.tscn" id="8_t63on"]
@@ -17,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://dro5d573niwan" path="res://Frameworks(YourStuff)/Mall/MainMallGame.tscn" id="10_t63on"]
 [ext_resource type="Texture2D" uid="uid://cey1t22r3cbiu" path="res://Misc/HallOfGames/Assets/GameThumbnails/pong.png" id="10_uxgyb"]
 [ext_resource type="Texture2D" uid="uid://c6vg16476ips" path="res://Misc/HallOfGames/Assets/GameThumbnails/Repair.png" id="11_3yisg"]
+[ext_resource type="Texture2D" uid="uid://bwuw66mrdb5id" path="res://Misc/HallOfGames/Assets/people/anna.png" id="11_4h5bt"]
 [ext_resource type="Texture2D" uid="uid://cfhir3rc5ty0r" path="res://Misc/HallOfGames/Assets/GameThumbnails/rockskip.png" id="12_ap2xa"]
 [ext_resource type="PackedScene" uid="uid://exaws1jgbyi6" path="res://Frameworks(YourStuff)/Jude/MixColors/MixPaint(Jude).tscn" id="12_f5dxm"]
 [ext_resource type="Texture2D" uid="uid://cj7obqsfkosy2" path="res://Misc/HallOfGames/Assets/GameThumbnails/swat.png" id="13_jfl8v"]
@@ -92,11 +94,8 @@ metadata/_edit_lock_ = true
 [node name="BasePlate" type="Node2D" parent="Games" unique_id=168510126]
 position = Vector2(1212, 193)
 
-[node name="Flatjude" type="Sprite2D" parent="Games/BasePlate" unique_id=1098618413]
+[node name="Flatjude" parent="Games/BasePlate" unique_id=1426676108 instance=ExtResource("2_if1hg")]
 position = Vector2(333, 402)
-scale = Vector2(1.2243928, 1.2243928)
-texture = ExtResource("5_ruw4v")
-offset = Vector2(4.083618, -63.705048)
 
 [node name="Polygon2D" type="Polygon2D" parent="Games/BasePlate" unique_id=1371238688]
 z_index = -1
@@ -111,8 +110,6 @@ texture = ExtResource("2_dm7o2")
 [node name="Door2" parent="Games/BasePlate" unique_id=220619079 instance=ExtResource("3_kfup3")]
 position = Vector2(194, 323)
 game_to_switch = ExtResource("5_0k5ob")
-
-[node name="GamerTag" parent="Games/BasePlate" unique_id=1690713788 instance=ExtResource("5_dxurm")]
 
 [node name="Vandalism" type="Node2D" parent="Games" unique_id=1912890229]
 position = Vector2(1772, 193)
@@ -131,6 +128,11 @@ texture = ExtResource("6_yfor6")
 position = Vector2(194, 323)
 game_to_switch = ExtResource("8_t63on")
 
+[node name="EvilKevin" parent="Games/Vandalism" unique_id=1548176213 instance=ExtResource("2_if1hg")]
+position = Vector2(323, 411.99997)
+texture = ExtResource("8_4h5bt")
+offset = Vector2(1.6334229, -31.852509)
+
 [node name="TrickTape" type="Node2D" parent="Games" unique_id=1895500436]
 position = Vector2(2319, 193)
 
@@ -147,6 +149,24 @@ texture = ExtResource("7_bxy5t")
 [node name="Door2" parent="Games/TrickTape" unique_id=2123463526 instance=ExtResource("3_kfup3")]
 position = Vector2(194, 323)
 game_to_switch = ExtResource("10_t63on")
+
+[node name="Anna" parent="Games/TrickTape" unique_id=870983650 instance=ExtResource("2_if1hg")]
+position = Vector2(387, 409)
+scale = Vector2(1.4779724, 1.4779724)
+texture = ExtResource("11_4h5bt")
+offset = Vector2(1.6334229, -31.852509)
+
+[node name="GamerTag" parent="Games/TrickTape/Anna" index="0" unique_id=1690713788]
+offset_left = -53.451633
+offset_top = -89.31156
+offset_right = 67.54837
+offset_bottom = -63.31156
+scale = Vector2(0.74612063, 0.74612063)
+
+[node name="Alex The Slave" parent="Games/TrickTape" unique_id=1696316857 instance=ExtResource("2_if1hg")]
+position = Vector2(293.99988, 408.99997)
+scale = Vector2(0.6789516, 0.6789516)
+offset = Vector2(7.5250244, -71.61972)
 
 [node name="Trolley" type="Node2D" parent="Games" unique_id=1064873953]
 position = Vector2(2866, 193)
@@ -387,4 +407,5 @@ text = "Highscore = 0"
 [node name="backgroundmusic" type="AudioStreamPlayer" parent="." unique_id=1152280100]
 stream = ExtResource("32_is3mi")
 
+[editable path="Games/TrickTape/Anna"]
 [editable path="Prooble 1"]
